@@ -20,7 +20,7 @@
 1. Apply pagination with API request
 2. Implement Webview in-app
 3. Design basic unit test cases for unit testing
-4. 
+
 ## App Screenshots
 
 | Home | Movie Details | Movie Booking |
