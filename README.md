@@ -12,5 +12,17 @@
 <img src="https://user-images.githubusercontent.com/59039044/169497174-5b999926-5c00-4e9f-ba1e-924633d48341.png" width="500">
 
 
+## Description
+
+## Frameworks
+
+- UIKit
+- XCTest
+- WebKit
 
 
+## What did I learn
+
+1. Apply pagination with API request
+2. Implement Webview in-app
+3. Design basic unit test cases for unit testing
