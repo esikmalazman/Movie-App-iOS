@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieInfoTableViewCell" rowHeight="125" id="KGk-i7-Jjw" customClass="MovieInfoTableViewCell" customModule="MovieApp_TakeHomeProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TitleLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPW-zM-q7P">
+                        <rect key="frame" x="10" y="10" width="300" height="38.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                        <color key="textColor" name="darkishPink"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tag List" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTQ-eZ-cfD">
+                        <rect key="frame" x="10" y="58.5" width="300" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4B-h3-ikw">
+                        <rect key="frame" x="10" y="83" width="120" height="34"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Language Label"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTP-Rx-FdM">
+                        <rect key="frame" x="215.5" y="91.5" width="94.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CTP-Rx-FdM" firstAttribute="centerY" secondItem="T4B-h3-ikw" secondAttribute="centerY" id="5zp-O9-UV4"/>
+                    <constraint firstItem="T4B-h3-ikw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="60p-3S-Ifd"/>
+                    <constraint firstAttribute="trailing" secondItem="QTQ-eZ-cfD" secondAttribute="trailing" constant="10" id="84x-HP-7hl"/>
+                    <constraint firstItem="T4B-h3-ikw" firstAttribute="top" secondItem="QTQ-eZ-cfD" secondAttribute="bottom" constant="7.5" id="L5X-L1-6X3"/>
+                    <constraint firstAttribute="trailing" secondItem="BPW-zM-q7P" secondAttribute="trailing" constant="10" id="LiW-QN-gVF"/>
+                    <constraint firstItem="QTQ-eZ-cfD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Tum-kh-Nzs"/>
+                    <constraint firstAttribute="bottom" secondItem="T4B-h3-ikw" secondAttribute="bottom" constant="8" id="csS-im-tJr"/>
+                    <constraint firstItem="QTQ-eZ-cfD" firstAttribute="top" secondItem="BPW-zM-q7P" secondAttribute="bottom" constant="10" id="ete-Ka-cGv"/>
+                    <constraint firstItem="BPW-zM-q7P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="mhT-nq-Lkn"/>
+                    <constraint firstAttribute="trailing" secondItem="CTP-Rx-FdM" secondAttribute="trailing" constant="10" id="s8j-y5-JJE"/>
+                    <constraint firstItem="BPW-zM-q7P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="tD3-Pe-aBC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="durationLabel" destination="CTP-Rx-FdM" id="ZSP-3j-9X3"/>
+                <outlet property="genreLabel" destination="QTQ-eZ-cfD" id="RhM-k6-tnO"/>
+                <outlet property="languageLabel" destination="T4B-h3-ikw" id="90T-nK-Ybm"/>
+                <outlet property="titleLabel" destination="BPW-zM-q7P" id="Osc-JH-Smh"/>
+            </connections>
+            <point key="canvasLocation" x="128.98550724637681" y="111.49553571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="darkishPink">
+            <color red="0.81568627450980391" green="0.0" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
