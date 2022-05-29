@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NYU-Oe-ctb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cathay-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MovieListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="MovieListViewController" customModule="MovieApp_TakeHomeProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ntH-e9-p0w">
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="aMC-2B-uy4">
+                                    <size key="itemSize" width="200" height="260"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ntH-e9-p0w" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ESl-I1-H3n"/>
+                            <constraint firstItem="ntH-e9-p0w" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MRZ-e9-DOa"/>
+                            <constraint firstItem="ntH-e9-p0w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TvO-Yc-Puh"/>
+                            <constraint firstItem="ntH-e9-p0w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tei-6I-h1w"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cathay" id="rF3-Wq-Nfi">
+                        <barButtonItem key="rightBarButtonItem" title="Release Date" image="slider.horizontal.3" catalog="system" id="09T-UD-yNI">
+                            <color key="tintColor" name="darkishPink"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="movieListCollectionView" destination="ntH-e9-p0w" id="g3d-wa-FZn"/>
+                        <outlet property="sortBarButton" destination="09T-UD-yNI" id="QhP-k4-Xdz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1008.6956521739131" y="109.82142857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="l5k-uh-x73">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NYU-Oe-ctb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="jZ9-Lx-iUw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tbR-aa-ibH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eTQ-se-d29" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98.550724637681171" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="slider.horizontal.3" catalog="system" width="128" height="100"/>
+        <namedColor name="darkishPink">
+            <color red="0.81568627450980391" green="0.0" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
