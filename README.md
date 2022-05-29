@@ -1,6 +1,26 @@
 ## App Demo
 <img src="https://user-images.githubusercontent.com/59039044/169497383-a2d6aeef-c703-400b-b746-8fb23e85bd8a.mov" width="200">
 
+## Description
+- Allow to sort movie list by ratings, release date and alphabetical
+- Enable to see movie details (Poster, Synopsis, Genres, Language) and book movie from vendor website
+- Use Dependency Injection to pass data between view controllers
+- Model-View-ViewModel(MVVM) architecure
+- Add basic unit test cases in-app
+- Use protocol to decouple singleton in URLSession
+ 
+## Frameworks
+
+- UIKit
+- XCTest
+- WebKit
+
+## What did I learn
+
+1. Apply pagination with API request
+2. Implement Webview in-app
+3. Design basic unit test cases for unit testing
+4. 
 ## App Screenshots
 
 | Home | Movie Details | Movie Booking |
@@ -12,23 +32,7 @@
 <img src="https://user-images.githubusercontent.com/59039044/169497174-5b999926-5c00-4e9f-ba1e-924633d48341.png" width="500">
 
 
-## Description
-- Allow to sort movie list by ratings, release date and alphabetical
-- Enable to see movie details (Poster, Synopsis, Genres, Language) and book movie from vendor website
-- Use Dependency Injection to pass data between view controllers
-- Model-View-ViewModel(MVVM) architecure
-- Add basic unit test cases in-app
-- Use protocol to decouple singleton in URLSession
-- 
-## Frameworks
-
-- UIKit
-- XCTest
-- WebKit
 
 
-## What did I learn
 
-1. Apply pagination with API request
-2. Implement Webview in-app
-3. Design basic unit test cases for unit testing
+
