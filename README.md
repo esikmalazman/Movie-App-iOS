@@ -13,7 +13,13 @@
 
 
 ## Description
-
+- Allow to sort movie list by ratings, release date and alphabetical
+- Enable to see movie details (Poster, Synopsis, Genres, Language) and book movie from vendor website
+- Use Dependency Injection to pass data between view controllers
+- Model-View-ViewModel(MVVM) architecure
+- Add basic unit test cases in-app
+- Use protocol to decouple singleton in URLSession
+- 
 ## Frameworks
 
 - UIKit
